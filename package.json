@@ -4,7 +4,8 @@
   "description": "",
   "main": "commitlint.config.js",
   "scripts": {
-    "release": "standard-version"
+    "release": "standard-version",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
