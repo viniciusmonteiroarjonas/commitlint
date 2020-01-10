@@ -1,0 +1,36 @@
+{
+  "name": "git-commitlint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "commitlint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusmonteiroarjonas/commitlint.git"
+  },
+  "keywords": [],
+  "author": "Vinícius Monteiro Arjonas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusmonteiroarjonas/commitlint/issues"
+  },
+  "homepage": "https://github.com/viniciusmonteiroarjonas/commitlint#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^4.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
