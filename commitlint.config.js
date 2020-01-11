@@ -28,8 +28,7 @@ module.exports = {
         'refactor',
         'revert',
         'style',
-        'test',
-        'vinicius'
+        'test'
       ]
     ]
   }
